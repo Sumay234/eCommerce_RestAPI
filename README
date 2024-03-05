@@ -1,0 +1,28 @@
+## 1. Envinorment Created:
+```
+python -m venv venvenv
+.\venvenv\Scripts\activate
+```
+## 2. Setup for creating Envi for Flask (Set up windows Environment)
+```
+Here Creating a envinorment for Flask so that we don't have
+to stop running process again and again of Flask to see update in the 
+browser.
+ Process->  Go to Advance System Setting -> Advance Option ->
+            Click on Enivironment Variable ->
+            Than click on Path and ok 
+            Than go to your terminal and write this code to ->
+            $env:Flask_ENV="development"
+            ~~ Thus your env setup 
+```
+
+## 3. Code Not To get __pycache__ file:
+```
+$env:PYTHONDONTWRITEBYTECODE=1
+```
+## 4. Why __init__ file:
+```
+To say the env that the folder created is not a another folder it belong to the same folder
+so we will use __init__.py in every folder to make the connection. Or we can that to the 
+env that all folder belong to the same env and they are the Python Packages.
+```
